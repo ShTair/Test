@@ -1,0 +1,4 @@
+git rebase -i <>
+f‚É‚·‚é
+git reflog expire --expire=now --all
+git gc --aggressive --prune=now
