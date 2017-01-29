@@ -1,0 +1,23 @@
+﻿git rebase -i <>
+fにする
+git reflog expire --expire=now --all
+git gc --aggressive --prune=now
+
+数える
+git count-objects -v
+
+.gitignore
+/*
+/*/.*
+
+.gitattributes
+* -text
+
+[core]
+    packedGitWindowSize = 1g
+    packedGitLimit = 1g
+[pack]
+    threads = 2
+    windowMemory = 1g
+    deltaCacheSize = 512m
+    packSizeLimit = 1g
