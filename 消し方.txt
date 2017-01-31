@@ -5,3 +5,9 @@ git gc --aggressive --prune=now
 
 ”‚¦‚é
 git count-objects -v
+
+.gitignore
+*
+
+.gitattributes
+* -text
